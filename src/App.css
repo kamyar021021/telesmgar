@@ -1081,11 +1081,17 @@ kbd {
     height: 6px;
   }
 
-  /* اصلاح HUD بازی برای موبایل */
   .hud {
-    padding: 8px;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 50; /* <--- این خط را اضافه کنید */
   }
-
+  
   .hud-top-right {
     top: 8px;
     left: 8px;
